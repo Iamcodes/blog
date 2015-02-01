@@ -1,2 +1,2 @@
 .project
-./db/development*
+db/development.sqlite3

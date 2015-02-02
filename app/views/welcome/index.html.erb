@@ -5,3 +5,23 @@
 	<li> <%= link_to "users", users_path %> </li>
 	<li><%= link_to "products", products_path %></li>
 </ul>
+
+<h3>Request</h3>
+
+<ul>
+	<li> 
+		<%= 
+		link_to "JSON", test_json_path ,{:remote => true, "data-type" => :json , :id=>"test_json"}
+		%>
+		<p id="json_detail">
+			
+		</p> 
+	</li>
+	<li>
+		<%= link_to "JAVASCRIPT", test_javascript_path,{ :remote => true  , :id=>"test_js"} %>
+		<p id="js_detail">
+			
+		</p>		
+	</li>
+	
+</ul>
